@@ -57,12 +57,21 @@ sequenceDiagram
 ## Part 3 — State Diagram(Message):
 
 ```mermaid
-Created
-→ Stored
-→ FanOutTriggered
-→ DeliveryInProgress
-→ FullyDelivered
-→ FullyRead
+stateDiagram-v2
+
+    [*] --> Created
+
+    Created --> Stored : save to DB
+    Stored --> FanOutTriggered : publish event
+    FanOutTriggered --> DeliveryInProgress : tasks enqueued
+
+    DeliveryInProgress --> PartiallyDelivered : some recipients delivered
+    DeliveryInProgress --> FullyDelivered : all recipients delivered
+
+    PartiallyDelivered --> FullyDelivered : remaining delivered
+
+    FullyDelivered --> PartiallyRead : some recipients read
+    PartiallyRead --> FullyRead : all recipients read
 ```
 ---
 ## Part 4 — ADR
