@@ -1,0 +1,263 @@
+[
+  {
+    "ContainingType": "GroupChatMessenger.Api.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapDeliveryRoutes\u003Eb__4_0",
+    "RelativePath": "delivery/process",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GroupChatMessenger.Api.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGroupRoutes\u003Eb__2_0",
+    "RelativePath": "groups",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "GroupChatMessenger.Api.CreateGroupRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GroupChatMessenger.Api.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGroupRoutes\u003Eb__2_1",
+    "RelativePath": "groups",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GroupChatMessenger.Api.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGroupRoutes\u003Eb__2_2",
+    "RelativePath": "groups/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GroupChatMessenger.Api.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGroupRoutes\u003Eb__2_3",
+    "RelativePath": "groups/{id}/members",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "GroupChatMessenger.Api.AddMemberRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GroupChatMessenger.Api.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMessageRoutes\u003Eb__3_0",
+    "RelativePath": "groups/{id}/messages",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "GroupChatMessenger.Api.SendMessageRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GroupChatMessenger.Api.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMessageRoutes\u003Eb__3_1",
+    "RelativePath": "groups/{id}/messages",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GroupChatMessenger.Api.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMessageRoutes\u003Eb__3_2",
+    "RelativePath": "messages/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GroupChatMessenger.Api.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMessageRoutes\u003Eb__3_3",
+    "RelativePath": "messages/{id}/read",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "GroupChatMessenger.Api.MarkReadRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GroupChatMessenger.Api.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapUserRoutes\u003Eb__1_0",
+    "RelativePath": "users",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "GroupChatMessenger.Api.CreateUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GroupChatMessenger.Api.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapUserRoutes\u003Eb__1_1",
+    "RelativePath": "users",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GroupChatMessenger.Api.Routes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapUserRoutes\u003Eb__1_2",
+    "RelativePath": "users/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
